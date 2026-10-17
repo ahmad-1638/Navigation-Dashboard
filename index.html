@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Murree Road Petrol Pump Navigator</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP: dashboard title -->
+<header>
+  
+  <div>
+    <h1>Rawalpindi Petrol Pump Navigator</h1>
+    <p>Find a petrol pump and get directions from your location</p>
+  </div>
+</header>
+
+<!-- LEFT SIDEBAR: petrol pumps -->
+<aside id="left">
+  <h2>⛽ Petrol Pumps <span class="badge" id="count">0</span></h2>
+  <input id="search" type="search" placeholder="🔎 Search petrol pump…" aria-label="Search petrol pumps">
+  <p id="status">⏳ Waiting for your location…</p>
+  <div id="list"></div>
+</aside>
+
+<!-- CENTER: map (route result is shown on top of the map) -->
+<div id="map"></div>
+
+<!--student details -->
+<aside id="right">
+  <h2>🎓 Student Information</h2>
+  <div class="profile">
+    <div class="avatar">👤</div>
+    <div class="info"><small>Ahmad Zafar</div>
+    <div class="info"><small>24-ARID-2220</div>
+  </div>
+  <div class="chips">
+   
+  </div>
+</aside>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
